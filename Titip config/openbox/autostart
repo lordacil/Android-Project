@@ -1,0 +1,78 @@
+### use arandr to set screen preference
+### save as ~/.screenlayout/dual-head.sh
+### uncomment next line
+# ~/.screenlayout/dual-head.sh
+
+### compositor
+### <yang ini>  sleep 1; manjaro-compositor --start &
+
+### restore wallpaper
+### <yang ini> sleep 1; nitrogen --restore &
+
+### Openbox autostart
+### <yabg ini> sleep 1; ob-autostart -d &
+
+### launch conky
+### manjaro-conky-session &
+
+### volumeicon
+### <yang ini>  sleep 1; volumeicon &
+
+### PolicyKit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+### Side shortcuts for file managers
+xdg-user-dirs-gtk-update &
+
+### enable numlock
+### uncomment next line
+# sleep 0.5; numlockx &
+
+### launch thunar in daemon mode
+sleep 1; thunar --daemon &
+
+### new setting
+# Load Xresources
+xrdb ~/.Xresources
+
+# UI Appearance - Open Last Theme
+bash -c '~/.config/openbox/visual-mode/startup'
+
+# Start Tray
+bash -c '~/.config/openbox/tray' &> /dev/null
+
+# Compositor
+picom -C -b
+
+# Authentication Agent - PolicyKit
+# lxpolkit &
+
+# Power Manager
+#xfce4-power-manager &
+
+# Sessions Lock (time: minute)
+ls="$(cat ~/.config/openbox/lockscreen)"
+xautolock -time 100 -locker "$ls" -detectsleep &
+
+# Others (e.g: mpd)
+mpd &> /dev/null
+
+### Required for xfce settings to work
+xfsettingsd &
+
+## glava --desktop &
+## plank &
+### sleep 1; manjaro-polybar-session &
+### tint2 ~/.config/tint2/carina.tint2rc
+### tint2 ~/.config/tint2/Minimalist/minimalist.tint2rc
+
+### <yang ini> tint2 ~/.config/tint2/owl4/eyecandy_left.tint2rc
+### <yang ini> tint2 ~/.config/tint2/owl4/eyecandy_right.tint2rc
+
+### tint2 ~/.config/tint2/nugraha-theme/Minim.tint2rc
+### sleep 1; manjaro-tint2-session &
+
+
+
+
+
