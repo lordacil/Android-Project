@@ -1,0 +1,162 @@
+# "Air" Tint2 Theme
+# By Azuma Hazuki
+# 21 October 2018
+
+#-----------------------
+# Background Definitions|
+#-----------------------
+
+# Background 0
+# (Background 0 is always 100% transparent; think "parentrelative" here...)
+
+# Background 1 - The main body of the panel
+rounded = 0
+
+border_width = 1
+border_color = #ffffff 100
+border_sides = TB
+
+background_color = #ffffff 75
+
+# Background 2 - Taskbar Active Items (all others are flat buttons)
+rounded = 4
+
+border_width = 1
+border_color = #000000 10
+
+background_color = #ffffff 20
+
+#---------------------------------
+# Global Settings/Item Definitions|
+#---------------------------------
+
+# Set the specifications of the panel itself
+panel_size = 100% 36
+panel_position = bottom center horizontal
+strut_policy = follow_size
+autohide = 0
+panel_layer = top
+
+# We want Tint2 on all screens
+panel_monitor = all
+
+# These are the items we want
+panel_items = PPPPTSC
+
+# Set Background ID 1 for the panel body
+panel_background_id=1
+
+# Kicker uses fairly tight spacing, but is looser in between individual items,
+# which we will adjust in the individual launchers' settings, etc.
+panel_padding = 0 2 2
+
+# Just for basic "make the icons brighter on hover" effects
+mouse_effects = 1
+
+launcher_icon_theme = oxygen
+launcher_icon_theme_override = 1
+
+#--------
+# Buttons|
+#--------
+
+# Here we define four launchers. The first one pops up the Openbox menu,
+# while the other three launch URxvt, PCManFM, and Falkon respectively.
+#
+# Since you likely aren't using Falkon, and maybe not URxvt (shame!),
+# make sure you change these before your first run.
+#
+# Note that we're actually using Buttons, not Tint2's Launchers, for
+# finer-grained control over what these do.
+
+# Desktop Menu
+button = new
+button_icon = kde.png
+button_background_id = 0
+button_padding = 6 2 0
+button_max_icon_size = 36
+button_lclick_command = jgmenu_run
+
+# URxvt
+button = new
+button_icon = utilities-terminal.png
+button_background_id = 0
+button_padding = 6 2 0
+button_max_icon_size = 32
+button_lclick_command = urxvt
+
+# PCManFM (GTK)
+button = new
+button_icon = user-home.png
+button_background_id = 0
+button_padding = 6 2 0
+button_max_icon_size = 32
+button_lclick_command = pcmanfm ~
+
+# Falkon
+button = new
+button_icon = konqueror.png
+button_background_id = 0
+button_padding = 6 2 0
+button_max_icon_size = 32
+button_lclick_command = falkon
+
+#-----------------
+# Taskbar Settings|
+#-----------------
+
+taskbar_mode = single_desktop
+taskbar_background_id = 0
+taskbar_padding = 2 2 2
+taskbar_sort_order = none
+
+urgent_nb_of_blink = 10000
+
+task_icon = 1
+task_text = 1
+task_centered = 0 
+
+task_background_id = 0
+task_font = Noto Sans 8
+task_font_color = #000000 100
+task_tooltip = 1
+task_maximum_size = 250 28
+
+task_padding = 8 4
+
+task_active_background_id = 2
+
+task_active_font_color = #000000 100
+
+task_iconified_font = Noto Sans 8
+task_iconified_font_color = #808080 100
+task_iconified_icon_asb = 50 0 -50
+
+task_urgent_font_color = #000000 100
+
+mouse_middle = close
+mouse_right = toggle
+mouse_scroll_up = shade
+mouse_scroll_down = iconify
+
+#-----------------
+# Systray Settings|
+#-----------------
+systray_padding = 2 2 2
+systray_background_id = 0
+systray_sort = left2right
+systray_icon_size = 24
+
+#---------------
+# Clock Settings|
+#---------------
+time1_format = %I:%M %p
+time1_font = Noto Sans 8
+
+time2_format = %B %d %Y
+time2_font = Noto Sans 7
+
+clock_background_id = 0
+clock_padding = 2 2
+
+clock_font_color = #000000 100
