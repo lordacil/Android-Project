@@ -1,0 +1,295 @@
+<resources>
+    <string name="app_name">Catalogue Movie V2</string>
+    <string name="rate">Rating : </string>
+    <string name="populer">Popularity   : </string>
+    <string name="movie">Movies</string>
+    <string name="tvshow">TV Show</string>
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="overview">Overview</string>
+    <string name="detail_film">Detail Movie</string>
+    <string name="detail_tv">Detail TV Show</string>
+    <string name="this_image">this image</string>
+
+    <!--   /////////////////////////
+         /////  STRING MOVIES ////
+       ///////////////////////// -->
+
+    <!--  Month Film   -->
+    <string name="month_film1">August 26</string>
+    <string name="month_film2">October 2</string>
+    <string name="month_film3">December 6</string>
+    <string name="month_film4">September 28</string>
+    <string name="month_film5">June 28</string>
+    <string name="month_film6">June 19</string>
+    <string name="month_film7">October 24</string>
+    <string name="month_film8">July 16</string>
+    <string name="month_film9">August 7</string>
+    <string name="month_film10">August 2</string>
+
+    <!-- Desc Film -->
+    <string name="desc_film1">High schooler Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.</string>
+    <string name="desc_film2">During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.</string>
+    <string name="desc_film3">Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson "Kingpin" Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.</string>
+    <string name="desc_film4">Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.</string>
+    <string name="desc_film5">Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.</string>
+    <string name="desc_film6">Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether thats Andy or Bonnie. But when Bonnie adds a reluctant new toy called "Forky" to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.</string>
+    <string name="desc_film7">The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</string>
+    <string name="desc_film8">Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.</string>
+    <string name="desc_film9">Boruto is the son of the 7th Hokage Naruto who completely rejects his father. Behind this, he has feelings of wanting to surpass Naruto, who is respected as a hero. He ends up meeting his fathers friend Sasuke, and requests to become... his apprentice!? The curtain on the story of the new generation written by Masashi Kishimoto rises!</string>
+    <string name="desc_film10">This time around BoBoiBoy goes up against a powerful ancient being called Retakka, who is after BoBoiBoys elemental powers. He and his friends will have to stop their mysterious new foe from carrying out his sinister plans.</string>
+
+    <!-- Judul Film -->
+    <string-array name="judul_film">
+        <item>Your Name.</item>
+        <item>Joker</item>
+        <item>Spider-Man:Into the Spider verse</item>
+        <item>Venom</item>
+        <item>Spider-Man:Far from Home</item>
+        <item>Toy Story 4</item>
+        <item>Big Hero 6</item>
+        <item>The Dark Knight</item>
+        <item>Boruto:Naruto the movie</item>
+        <item>Boboiboy Movie 2</item>
+    </string-array>
+
+    <!-- Rate Film -->
+    <string-array name="rate_film">
+        <item>8.4/10</item>
+        <item>8.8/10</item>
+        <item>8.4/10</item>
+        <item>6.7/10</item>
+        <item>7.6/10</item>
+        <item>8/10</item>
+        <item>7.8/10</item>
+        <item>9/10</item>
+        <item>8/10</item>
+        <item>8.1/10</item>
+    </string-array>
+
+    <!-- Popular Film -->
+    <string-array name="popular_film">
+        <item>146.848</item>
+        <item>399.873</item>
+        <item>270.922</item>
+        <item>309.731</item>
+        <item>222.894</item>
+        <item>122.408</item>
+        <item>380.825</item>
+        <item>2.125.868</item>
+        <item>7.359</item>
+        <item>241</item>
+    </string-array>
+
+    <!-- Month Film -->
+    <string-array name="month_film">
+        <item>@string/month_film1</item>
+        <item>@string/month_film2</item>
+        <item>@string/month_film3</item>
+        <item>@string/month_film4</item>
+        <item>@string/month_film5</item>
+        <item>@string/month_film6</item>
+        <item>@string/month_film7</item>
+        <item>@string/month_film8</item>
+        <item>@string/month_film9</item>
+        <item>@string/month_film10</item>
+    </string-array>
+
+    <!-- Year Film -->
+    <string-array name="year_film">
+        <item>2016</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2014</item>
+        <item>2018</item>
+        <item>2015</item>
+        <item>2019</item>
+    </string-array>
+
+    <!-- Desc Film -->
+    <string-array name="desc_film">
+        <item>@string/desc_film1</item>
+        <item>@string/desc_film2</item>
+        <item>@string/desc_film3</item>
+        <item>@string/desc_film4</item>
+        <item>@string/desc_film5</item>
+        <item>@string/desc_film6</item>
+        <item>@string/desc_film7</item>
+        <item>@string/desc_film8</item>
+        <item>@string/desc_film9</item>
+        <item>@string/desc_film10</item>
+    </string-array>
+
+    <!-- Photo Film -->
+    <string-array name="photo_film">
+        <item>https://image.tmdb.org/t/p/w116_and_h174_face/xq1Ugd62d23K2knRUx6xxuALTZB.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/lcq8dVxeeOqHvvgcte707K0KVx5.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/ehYkgIEVkJY0SBX8cGHjmKtCeri.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/rzEmN6l7yWDH9KttH4yXrDftL53.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/pKKvCaL1TPTVtbI6EeliyND3api.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/9GB2iXCPVP6bgyQXXPUchX8CD7p.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/qeNueS7WzNCKiEbBpj0jRaKDGn9.jpg</item>
+    </string-array>
+
+    <!-- Photo sampul Film -->
+    <string-array name="photosampul_film">
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/7OMAfDJikBxItZBIug0NJig5DHD.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/5myQbDzw3l8K9yofUXRJ4UTVgam.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/m67smI1IIMmYzCl9axvKNULVKLr.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/lv3NrraY2VRK6ImwNU3vfOPZyTi.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/hqkIcbrOHL86UncnHIsHVcVmzue.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/6jjx8qsnMdevUIBzxtQbmQ6OOb6.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/mmz719zYAlkbGbH935JieBe8YR8.jpg</item>
+    </string-array>
+
+    <!--   //////////////////////////
+         /////  STRING TV SHOW ////
+       ////////////////////////// -->
+
+    <!--  Month TV   -->
+    <string name="month_tv1">December 16</string>
+    <string name="month_tv2">August 13</string>
+    <string name="month_tv3">Mey 27</string>
+    <string name="month_tv4">December 2</string>
+    <string name="month_tv5">Mey 6</string>
+    <string name="month_tv6">January 20</string>
+    <string name="month_tv7">November 6</string>
+    <string name="month_tv8">July 25</string>
+    <string name="month_tv9">Juny 15</string>
+    <string name="month_tv10">April 5</string>
+
+    <!-- Desc TV -->
+    <string name="desc_tv1">Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.</string>
+    <string name="desc_tv2">Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.</string>
+    <string name="desc_tv3">A contemporary and culturally resonant drama about a young programmer, Elliot, who suffers from a debilitating anti-social disorder and decides that he can only connect to people by hacking them. He wields his skills as a weapon to protect the people that he cares about. Elliot will find himself in the intersection between a cybersecurity firm he works for and the underworld organizations that are recruiting him to bring down corporate America.</string>
+    <string name="desc_tv4">Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Mortys already unstable family life, these events cause Morty much distress at home and school</string>
+    <string name="desc_tv5">The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.</string>
+    <string name="desc_tv6">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his familys financial future at any cost as he enters the dangerous world of drugs and crime.</string>
+    <string name="desc_tv7">David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.</string>
+    <string name="desc_tv8">A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.</string>
+    <string name="desc_tv9">Twin brother and sister Dipper and Mabel Pines are in for an unexpected adventure when they spend the summer helping their great uncle Stan run a tourist trap in the mysterious town of Gravity Falls, Oregon.</string>
+    <string name="desc_tv10">They’re not righteous, they’re wrongteous! Hook up with Finn and Jake as they travel the Land of Ooo searching for adventure. But remember, adventure isn’t always easy. Sometimes you’ve got to battle fire gnomes that torture old ladies, save a smelly hot dog princess from the Ice King, and thaw out a bunch of frozen businessmen. What the cabbage?!</string>
+
+
+    <!-- Judul TV -->
+    <string-array name="judul_tvshow">
+        <item>The Simpsons</item>
+        <item>South Park</item>
+        <item>Mr. Robot</item>
+        <item>Rick and Morty</item>
+        <item>Chernobyl</item>
+        <item>Breaking Bad</item>
+        <item>Planet Earth II</item>
+        <item>Sherlock</item>
+        <item>Gavity Falls</item>
+        <item>Adventure Time</item>
+    </string-array>
+
+    <!-- Rate TV -->
+    <string-array name="rate_tvshow">
+        <item>8.7/10</item>
+        <item>8.7/10</item>
+        <item>8.5/10</item>
+        <item>9.3/10</item>
+        <item>9.5/10</item>
+        <item>9.5/10</item>
+        <item>9.5/10</item>
+        <item>9.1/10</item>
+        <item>8.9/10</item>
+        <item>8.6/10</item>
+    </string-array>
+
+    <!-- Popular TV -->
+    <string-array name="popular_tvshow">
+        <item>341.292</item>
+        <item>309.522</item>
+        <item>288.460</item>
+        <item>297.810</item>
+        <item>378.626</item>
+        <item>1.276.328</item>
+        <item>80.989</item>
+        <item>732.566</item>
+        <item>57.762</item>
+        <item>68.463</item>
+    </string-array>
+
+    <!-- Month TV -->
+    <string-array name="month_tvshow">
+        <item>@string/month_tv1</item>
+        <item>@string/month_tv2</item>
+        <item>@string/month_tv3</item>
+        <item>@string/month_tv4</item>
+        <item>@string/month_tv5</item>
+        <item>@string/month_tv6</item>
+        <item>@string/month_tv7</item>
+        <item>@string/month_tv8</item>
+        <item>@string/month_tv9</item>
+        <item>@string/month_tv10</item>
+    </string-array>
+
+    <!-- Year TV -->
+    <string-array name="year_tvshow">
+        <item>1989</item>
+        <item>1997</item>
+        <item>2015</item>
+        <item>2013</item>
+        <item>2019</item>
+        <item>2008</item>
+        <item>2016</item>
+        <item>2010</item>
+        <item>2012</item>
+        <item>2010</item>
+    </string-array>
+
+    <!-- Desc TV -->
+    <string-array name="desc_tvshow">
+        <item>@string/desc_tv1</item>
+        <item>@string/desc_tv2</item>
+        <item>@string/desc_tv3</item>
+        <item>@string/desc_tv4</item>
+        <item>@string/desc_tv5</item>
+        <item>@string/desc_tv6</item>
+        <item>@string/desc_tv7</item>
+        <item>@string/desc_tv8</item>
+        <item>@string/desc_tv9</item>
+        <item>@string/desc_tv10</item>
+    </string-array>
+
+    <!-- Photo TV -->
+    <string-array name="photo_tvshow">
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/yTZQkSsxUFJZJe67IenRM0AEklc.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/v9zc0cZpy5aPSfAy6Tgb6I1zWgV.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/esN3gWb1P091xExLddD2nh4zmi3.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/uy5QoTu8fc6fGXMCTMbpQJFUEB0.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/f9zGxLHGyQB10cMDZNY5ZcGKhZi.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/oGsgxjeZ9rd20eCJsGSMGgWvl4P.jpg</item>
+        <item>https://image.tmdb.org/t/p/w600_and_h900_bestv2/h5nQA8i7Z1M8yzDfDiJ9epmd1AD.jpg</item>
+    </string-array>
+
+    <!-- Photo sampul TV -->
+    <string-array name="photosampul_tvshow">
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/f5uNbUC76oowt5mt5J9QlqrIYQ6.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/mSDKNVvDfitFE6Fb6fSSl5DQmgS.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/4n0TZfTUSUELqRrOA8sZKWs9bWU.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/mzzHr6g1yvZ05Mc7hNj3tUdy2bM.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/hbgPoI0GBrXJfGjYNV2fMQU0xou.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/xIt4DDYipMPNu2HDBrhUS4ndSYb.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/bvS50jBZXtglmLu72EAt5KgJBrL.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/sJjrJWsOCUUeVMexxANNC6s3dWV.jpg</item>
+        <item>https://image.tmdb.org/t/p/w1000_and_h563_face/z04MAaCOspXkhrJ9hwgozsliPMf.jpg</item>
+    </string-array>
+
+
+</resources>

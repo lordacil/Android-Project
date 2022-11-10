@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Catalogue Movie V2</string>
+    <string name="rate">Peringkat   : </string>
+    <string name="populer">Kepopuleran : </string>
+    <string name="movie">Film</string>
+    <string name="tvshow">Acara TV</string>
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="overview">Ulasan</string>
+    <string name="detail_film">Film Detail</string>
+    <string name="detail_tv">Acara-Tv Detail</string>
+    <string name="this_image">ini gambar</string>
+
+
+    <!--  Month Film   -->
+    <string name="month_film1">26 Agustus</string>
+    <string name="month_film2">2 Oktober</string>
+    <string name="month_film3">6 Desember</string>
+    <string name="month_film4">28 September</string>
+    <string name="month_film5">28 Juni</string>
+    <string name="month_film6">19 Juni</string>
+    <string name="month_film7">24 Oktober</string>
+    <string name="month_film8">16 Juli</string>
+    <string name="month_film9">7 Agustus</string>
+    <string name="month_film10">2 Agustus</string>
+
+    <!-- Desc Film -->
+    <string name="desc_film1">Siswa sekolah menengah, Mitsuha dan Taki adalah orang asing yang benar-benar hidup dalam kehidupan yang terpisah. Tapi suatu malam, mereka tiba-tiba berganti tempat. Mitsuha bangun dalam tubuh Taki, dan dia di tubuhnya. Kejadian aneh ini terus terjadi secara acak, dan keduanya harus menyesuaikan hidup mereka satu sama lain.</string>
+    <string name="desc_film2">Selama 1980-an, seorang pelawak berdiri gagal didorong gila dan beralih ke kehidupan kejahatan dan kekacauan di Kota Gotham sambil menjadi tokoh kejahatan psikopat terkenal.</string>
+    <string name="desc_film3">Miles Morales menyulap hidupnya antara menjadi siswa sekolah menengah dan menjadi manusia laba-laba. Ketika Wilson \"Kingpin\" Fisk menggunakan collider super, yang lain dari seberang Spider-Verse diangkut ke dimensi ini.</string>
+    <string name="desc_film4">Jurnalis investigasi Eddie Brock mencoba untuk kembali setelah skandal, tetapi secara tidak sengaja menjadi tuan rumah Venom, seorang simbiot alien yang sangat kuat dan sakti. Segera, ia harus mengandalkan kekuatan barunya untuk melindungi dunia dari organisasi bayangan yang mencari simbiosis mereka sendiri.</string>
+    <string name="desc_film5">Peter Parker dan teman-temannya melakukan perjalanan musim panas ke Eropa. Namun, mereka hampir tidak dapat beristirahat - Peter harus setuju untuk membantu Nick Fury mengungkap misteri makhluk yang menyebabkan bencana alam dan kehancuran di seluruh benua.</string>
+    <string name="desc_film6">Woody selalu yakin tentang tempatnya di dunia dan bahwa prioritasnya adalah merawat anaknya, apakah itu Andy atau Bonnie. Tetapi ketika Bonnie menambahkan mainan baru yang enggan disebut \"Forky\" ke kamarnya, petualangan perjalanan bersama teman-teman lama dan baru akan menunjukkan kepada Woody seberapa besar dunia untuk sebuah mainan.</string>
+    <string name="desc_film7">Ikatan khusus yang berkembang antara robot tiup Baymax plus-ukuran, dan Hiro Hamada yang luar biasa, yang bekerja sama dengan sekelompok teman untuk membentuk sekelompok pahlawan teknologi tinggi.</string>
+    <string name="desc_film8">Batman mempertaruhkan taruhannya dalam perang melawan kejahatan. Dengan bantuan Letnan Jim Gordon dan Jaksa Distrik Harvey Dent, Batman berangkat untuk membongkar organisasi kriminal yang tersisa yang mengganggu jalan-jalan. Kemitraan ini terbukti efektif, tetapi mereka segera menemukan diri mereka menjadi korban kekacauan yang dilancarkan oleh dalang kriminal yang dikenal oleh warga Gotham yang ketakutan sebagai Joker</string>
+    <string name="desc_film9">Boruto adalah putra Naruto Hokage ke-7 yang sepenuhnya menolak ayahnya. Di belakang ini, ia memiliki perasaan ingin melampaui Naruto, yang dihormati sebagai pahlawan. Dia akhirnya bertemu dengan teman ayahnya Sasuke, dan meminta untuk menjadi ... muridnya !? Tirai pada kisah generasi baru yang ditulis oleh Masashi Kishimoto naik!</string>
+    <string name="desc_film10">Kali ini di sekitar BoBoiBoy berhadapan dengan makhluk purba yang kuat bernama Retakka, yang mengincar kekuatan unsur BoBoiBoy. Dia dan teman-temannya harus menghentikan musuh baru misterius mereka dari melaksanakan rencana jahatnya.</string>
+
+    <!--  Month TV   -->
+    <string name="month_tv1">16 Desember</string>
+    <string name="month_tv2">13 Agustus</string>
+    <string name="month_tv3">27 Mei</string>
+    <string name="month_tv4">2 Desember</string>
+    <string name="month_tv5">6 Mei</string>
+    <string name="month_tv6">20 Januari</string>
+    <string name="month_tv7">6 November</string>
+    <string name="month_tv8">25 Juli</string>
+    <string name="month_tv9">15 Juni</string>
+    <string name="month_tv10">5 April</string>
+
+    <!-- Desc TV -->
+    <string name="desc_tv1">Bertempat di Springfield, kota rata-rata di Amerika, pertunjukan ini berfokus pada kejenakaan dan petualangan sehari-hari keluarga Simpson; Homer, Marge, Bart, Lisa dan Maggie, serta ribuan pemain virtual. Sejak awal, serial ini telah menjadi ikon budaya pop, menarik ratusan selebriti menjadi bintang tamu. Acara ini juga menjadi terkenal karena satirnya yang tak kenal takut terhadap kehidupan politik, media, dan Amerika secara umum.</string>
+    <string name="desc_tv2">Mengikuti kesalahan dari empat siswa sekolah dasar yang tidak sopan di kota South Park yang tenang dan tidak berfungsi, Colorado.</string>
+    <string name="desc_tv3">Drama kontemporer dan resonan budaya tentang seorang programmer muda, Elliot, yang menderita gangguan anti-sosial yang melemahkan dan memutuskan bahwa ia hanya dapat terhubung dengan orang-orang dengan meretasnya. Dia menggunakan keterampilannya sebagai senjata untuk melindungi orang-orang yang dia sayangi. Elliot akan menemukan dirinya di persimpangan antara sebuah perusahaan cybersecurity tempat dia bekerja dan organisasi-organisasi dunia bawah yang merekrutnya untuk menjatuhkan perusahaan Amerika.</string>
+    <string name="desc_tv4">Rick adalah orang tua yang tidak seimbang secara mental tetapi berbakat secara ilmiah yang baru-baru ini terhubung kembali dengan keluarganya. Dia menghabiskan sebagian besar waktunya dengan melibatkan cucunya yang muda, Morty, dalam petualangan berbahaya dan aneh di luar angkasa dan alam semesta alternatif. Ditambah dengan kehidupan keluarga Morty yang sudah tidak stabil, peristiwa-peristiwa ini menyebabkan Morty sangat tertekan di rumah dan sekolah.</string>
+    <string name="desc_tv5">Kisah nyata dari salah satu bencana buatan manusia terburuk dalam sejarah: kecelakaan nuklir bencana di Chernobyl. Sebuah kisah tentang pria dan wanita pemberani yang berkorban untuk menyelamatkan Eropa dari bencana yang tak terbayangkan.</string>
+    <string name="desc_tv6">Ketika Walter White, seorang guru kimia New Mexico, didiagnosis dengan kanker stadium III dan diberi prognosis hanya dua tahun lagi untuk hidup. Dia dipenuhi dengan rasa tidak takut dan keinginan yang tak henti-hentinya untuk mengamankan masa depan keuangan keluarganya dengan biaya berapa pun ketika dia memasuki dunia narkoba dan kejahatan yang berbahaya.</string>
+    <string name="desc_tv7">David Attenborough menyajikan seri dokumenter yang mengeksplorasi bagaimana hewan memenuhi tantangan untuk bertahan hidup di habitat paling ikonik di bumi.</string>
+    <string name="desc_tv8">Pembaruan modern menemukan detektif terkenal dan mitra dokternya memecahkan kejahatan di London abad ke-21.</string>
+    <string name="desc_tv9">Saudara kembar dan Dipper dan Mabel Pines berada dalam petualangan yang tak terduga ketika mereka menghabiskan musim panas membantu paman buyut mereka Stan menjebak turis di kota misterius Gravity Falls, Oregon.</string>
+    <string name="desc_tv10">Mereka tidak benar, mereka salah! Terhubung dengan Finn dan Jake saat mereka melakukan perjalanan di Tanah Ooo mencari petualangan. Tapi ingat, petualangan tidak selalu mudah. Kadang-kadang Anda harus memerangi gnome api yang menyiksa wanita tua, menyelamatkan putri hot dog yang bau dari Ice King, dan mencairkan sekelompok pengusaha beku. Apa kolnya ?!</string>
+
+</resources>

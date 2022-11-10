@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateTint="@color/kuning"
+        android:visibility="visible" />
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        android:id="@+id/tvRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:animationDuration="1200"
+        app:layoutManagerOrientation="vertical"
+        app:layoutManagerReverse="false"
+        app:layoutManagerType="linear">
+
+    </com.mlsdev.animatedrv.AnimatedRecyclerView>
+
+</LinearLayout>
+</FrameLayout>

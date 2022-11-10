@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jenkel">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="id_trans">
+        <item>111</item>
+        <item>222</item>
+        <item>333</item>
+        <item>444</item>
+        <item>555</item>
+        <item>666</item>
+    </string-array>
+
+    <string-array name="array_gender_options">
+        <item>@string/gender_unknown</item>
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+    </string-array>
+</resources>

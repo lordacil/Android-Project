@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mFragments.FragmentMovie">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/kuning"
+        android:visibility="gone" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        android:id="@+id/movieRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:animationDuration="1200"
+        app:layoutManagerOrientation="vertical"
+        app:layoutManagerReverse="false"
+        app:layoutManagerType="linear"
+        tools:listitem="@layout/model"/>
+
+</LinearLayout>
+
+</FrameLayout>

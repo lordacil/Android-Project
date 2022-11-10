@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Catalogue Movie</string>
+
+    <string-array name="data_judul">
+        <item>Your Name.</item>
+        <item>Joker</item>
+        <item>Spider-Man:Into the Spider verse</item>
+        <item>Venom</item>
+        <item>Spider-Man:Far from Home</item>
+        <item>Toy Story 4</item>
+        <item>Big Hero 6</item>
+        <item>The Dark Knight</item>
+        <item>Boruto:Naruto the movie</item>
+        <item>Boboiboy Movie 2</item>
+    </string-array>
+
+    <string-array name="data_rate">
+        <item>8.4/10</item>
+        <item>8.8/10</item>
+        <item>8.4/10</item>
+        <item>6.7/10</item>
+        <item>7.6/10</item>
+        <item>8/10</item>
+        <item>7.8/10</item>
+        <item>9/10</item>
+        <item>8/10</item>
+        <item>8.1/10</item>
+    </string-array>
+
+    <string-array name="data_popular">
+        <item>146.848</item>
+        <item>399.873</item>
+        <item>270.922</item>
+        <item>309.731</item>
+        <item>222.894</item>
+        <item>122.408</item>
+        <item>380.825</item>
+        <item>2.125.868</item>
+        <item>7.359</item>
+        <item>241</item>
+    </string-array>
+
+    <string-array name="data_month">
+        <item>August 26</item>
+        <item>October 2</item>
+        <item>December 6</item>
+        <item>September 28</item>
+        <item>June 28</item>
+        <item>June 19</item>
+        <item>October 24</item>
+        <item>July 16</item>
+        <item>August 7</item>
+        <item>August 2</item>
+    </string-array>
+
+    <string-array name="data_year">
+        <item>2016</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2014</item>
+        <item>2018</item>
+        <item>2015</item>
+        <item>2019</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Siswa sekolah menengah, Mitsuha dan Taki adalah orang asing yang benar-benar hidup dalam kehidupan yang terpisah. Tapi suatu malam, mereka tiba-tiba berganti tempat. Mitsuha bangun dalam tubuh Taki, dan dia di tubuhnya. Kejadian aneh ini terus terjadi secara acak, dan keduanya harus menyesuaikan hidup mereka satu sama lain.</item>
+        <item>Selama 1980-an, seorang pelawak berdiri gagal didorong gila dan beralih ke kehidupan kejahatan dan kekacauan di Kota Gotham sambil menjadi tokoh kejahatan psikopat terkenal.</item>
+        <item>Miles Morales menyulap hidupnya antara menjadi siswa sekolah menengah dan menjadi manusia laba-laba. Ketika Wilson "Kingpin" Fisk menggunakan collider super, yang lain dari seberang Spider-Verse diangkut ke dimensi ini.</item>
+        <item>Jurnalis investigasi Eddie Brock mencoba untuk kembali setelah skandal, tetapi secara tidak sengaja menjadi tuan rumah Venom, seorang simbiot alien yang sangat kuat dan sakti. Segera, ia harus mengandalkan kekuatan barunya untuk melindungi dunia dari organisasi bayangan yang mencari simbiosis mereka sendiri.</item>
+        <item>Peter Parker dan teman-temannya melakukan perjalanan musim panas ke Eropa. Namun, mereka hampir tidak dapat beristirahat - Peter harus setuju untuk membantu Nick Fury mengungkap misteri makhluk yang menyebabkan bencana alam dan kehancuran di seluruh benua.</item>
+        <item>Woody selalu yakin tentang tempatnya di dunia dan bahwa prioritasnya adalah merawat anaknya, apakah itu Andy atau Bonnie. Tetapi ketika Bonnie menambahkan mainan baru yang enggan disebut "Forky" ke kamarnya, petualangan perjalanan bersama teman-teman lama dan baru akan menunjukkan kepada Woody seberapa besar dunia untuk sebuah mainan.</item>
+        <item>Ikatan khusus yang berkembang antara robot tiup Baymax plus-ukuran, dan Hiro Hamada yang luar biasa, yang bekerja sama dengan sekelompok teman untuk membentuk sekelompok pahlawan teknologi tinggi.</item>
+        <item>Batman mempertaruhkan taruhannya dalam perang melawan kejahatan. Dengan bantuan Letnan Jim Gordon dan Jaksa Distrik Harvey Dent, Batman berangkat untuk membongkar organisasi kriminal yang tersisa yang mengganggu jalan-jalan. Kemitraan ini terbukti efektif, tetapi mereka segera menemukan diri mereka menjadi korban kekacauan yang dilancarkan oleh dalang kriminal yang dikenal oleh warga Gotham yang ketakutan sebagai Joker.</item>
+        <item>Boruto adalah putra Naruto Hokage ke-7 yang sepenuhnya menolak ayahnya. Di belakang ini, ia memiliki perasaan ingin melampaui Naruto, yang dihormati sebagai pahlawan. Dia akhirnya bertemu dengan teman ayahnya Sasuke, dan meminta untuk menjadi ... muridnya !? Tirai pada kisah generasi baru yang ditulis oleh Masashi Kishimoto naik!</item>
+        <item>Kali ini di sekitar BoBoiBoy berhadapan dengan makhluk purba yang kuat bernama Retakka, yang mengincar kekuatan unsur BoBoiBoy. Dia dan teman-temannya harus menghentikan musuh baru misterius mereka dari melaksanakan rencana jahatnya.</item>
+    </string-array>
+
+    <array name="data_photo">
+        <item>@drawable/poster_kimi</item>
+        <item>@drawable/poster_joker</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_venome</item>
+        <item>@drawable/poster_spidermanfarhome</item>
+        <item>@drawable/poster_toystory</item>
+        <item>@drawable/poster_bighero</item>
+        <item>@drawable/poster_betmen</item>
+        <item>@drawable/poster_naruto</item>
+        <item>@drawable/poster_boboiboy</item>
+    </array>
+
+    <array name="data_photo_sampul">
+        <item>@drawable/sampul_yourname</item>
+        <item>@drawable/sampul_joker</item>
+        <item>@drawable/sampul_spidermaninto</item>
+        <item>@drawable/sampul_venom</item>
+        <item>@drawable/sampul_farhome</item>
+        <item>@drawable/sampul_toystory</item>
+        <item>@drawable/sampul_bighero</item>
+        <item>@drawable/sampul_betmen</item>
+        <item>@drawable/sampul_boruto</item>
+        <item>@drawable/sampul_boboiboy</item>
+    </array>
+</resources>

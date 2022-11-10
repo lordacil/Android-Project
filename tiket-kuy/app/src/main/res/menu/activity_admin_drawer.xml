@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rute"
+            android:icon="@drawable/ic_rute"
+            android:title="Rute" />
+        <item
+            android:id="@+id/nav_trans"
+            android:icon="@drawable/ic_kapal"
+            android:title="Transportasi" />
+        <item
+            android:id="@+id/nav_dest"
+            android:icon="@drawable/ic_destination"
+            android:title="Kota" />
+        <item
+            android:id="@+id/nav_airport"
+            android:icon="@drawable/ic_air"
+            android:title="Bandara" />
+        <item
+            android:id="@+id/nav_jdwl"
+            android:icon="@drawable/ic_jadwal"
+            android:title="Jadwal" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_user"
+            android:title="User" />
+        <item
+            android:id="@+id/nav_logot"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Payment">
+        <menu>
+            <item
+                android:id="@+id/nav_payment"
+                android:icon="@drawable/ic_payment"
+                android:title="Payment" />
+        </menu>
+    </item>
+
+</menu>

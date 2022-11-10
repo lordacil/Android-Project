@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/logo2" />
+
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/acil"
+            android:background="@drawable/bg_rectangle_edittext"
+            android:layout_marginBottom="30dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/password_selector"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/compassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Comfir_Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/namapenumpang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_namapenumpang"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Nama lengkap"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/alamatpenumpang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_alamatpenumpang"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="Alamat lengkap"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/acil" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tglahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_tglahir"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:hint="tanggal lahir"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/acil"
+                android:textColorHint="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/jenkel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/txt_jenkel"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:entries="@array/jenkel"
+                    android:textColor="@color/acil"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txt_telepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_rectangle_edittext"
+                    android:hint="Telepon"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/acil"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_background"
+                android:text="Register"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:textColor="@color/acil"
+                android:textStyle="bold"
+                android:fontFamily="@font/print_clearly"
+                android:text=" ---------------------------- Atau ----------------------------"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#00555555"
+                android:text="Sudah punya akun? Login"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

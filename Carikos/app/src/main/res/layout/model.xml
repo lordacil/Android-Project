@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:id="@+id/image_kosan"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <TextView
+                android:id="@+id/status_kosan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tersedia"
+                android:textStyle="italic"
+                android:fontFamily="@font/gotham"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginStart="266dp"
+                android:layout_marginTop="146dp"
+                android:background="@color/methyst"/>
+
+            <TextView
+                android:id="@+id/deskripsi_kosan"
+                android:textColor="#262626"
+                android:layout_below="@id/image_kosan"
+                android:fontFamily="@font/gotham"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/harga_kosan"
+                android:layout_below="@id/deskripsi_kosan"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#1ABC9C"
+                android:maxLines="3"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nama_kosan"
+                android:layout_below="@id/harga_kosan"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="3"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">tiket-kuy</string>
+    <string name="login">Login</string>
+    <string name="register_caption">Tidak punya akun? Daftar</string>
+    <string name="lupaakun">Lupa Password?</string>
+    <string name="title_activity_menu">Tiket-kuy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">admin@tiketkuy.com</string>
+    <string name="title_activity_kota">Kota</string>
+    <string name="title_activity_kendaraan">Kendaraan</string>
+    <string name="pesan">1. Klik pada button yg ada di menu pilih mau pesan Ticket pesawat / kereta\n2. Pilih Tujuan Anda\n3. Booking dan Validasi\n4. Ticket siap  dipakai !</string>
+    <string name="twitterUsername">\@joeytribbiani</string>
+    <string-array name="mobile_arrays">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>Xiaomi</item>
+    </string-array>
+    <string name="title_activity_bandara_airport">BandaraAirport</string>
+</resources>

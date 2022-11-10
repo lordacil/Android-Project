@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailKosanPutra">
+
+        <ImageView
+            android:tint="#6F000000"
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:background="@color/methyst"
+            android:layout_height="200dp">
+
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_kosan"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#ffff"
+            app:civ_border_width="6dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="100dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/fiture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas :"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/print_clearly"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_kosan"/>
+
+        <TextView
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/gotham"
+            android:drawableStart="@drawable/ic_wifi"
+            android:textStyle="bold"
+            android:layout_below="@id/fiture"/>
+
+        <TextView
+            android:id="@+id/jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akses Kunci 24 Jam"
+            android:fontFamily="@font/gotham"
+            android:drawableStart="@drawable/ic_jam"
+            android:textStyle="bold"
+            android:layout_below="@id/wifi"/>
+
+        <TextView
+            android:id="@+id/dapur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dapur"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/gotham"
+            android:drawableStart="@drawable/ic_dapur"
+            android:textStyle="bold"
+            android:layout_below="@id/fiture"/>
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AC :"
+            android:fontFamily="@font/gotham"
+            android:layout_marginStart="200dp"
+            android:drawableStart="@drawable/ic_ac"
+            android:textStyle="bold"
+            android:layout_below="@id/wifi"/>
+
+        <TextView
+            android:id="@+id/ruang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruang Santai"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/gotham"
+            android:drawableStart="@drawable/ic_ruang"
+            android:textStyle="bold"
+            android:layout_below="@id/jam"/>
+
+        <TextView
+            android:id="@+id/wc"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toilet dalam"
+            android:fontFamily="@font/gotham"
+            android:drawableStart="@drawable/ic_wc"
+            android:layout_marginStart="200dp"
+            android:textStyle="bold"
+            android:layout_below="@id/jam"/>
+
+
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi :"
+            android:fontFamily="@font/print_clearly"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/ruang"/>
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="desc"
+            android:layout_marginBottom="25dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham"
+            android:layout_below="@+id/desc"/>
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga : "
+            android:fontFamily="@font/print_clearly"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/txt_desc"/>
+
+        <TextView
+            android:id="@+id/txt_harga"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham"
+            android:layout_below="@+id/harga"/>
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/print_clearly"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/txt_harga"
+            android:text="Nama Kosan :"/>
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ss"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham"
+            android:layout_below="@+id/nama"/>
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/pemilik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/print_clearly"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/txt_nama"
+            android:text="Pemilik Kosan :"/>
+
+        <TextView
+            android:id="@+id/txt_pemilik"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="acil"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham"
+            android:layout_below="@+id/pemilik"/>
+
+        <TextView
+            android:background="@drawable/grad"
+            android:gravity="center"
+            android:id="@+id/telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/print_clearly"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/txt_pemilik"
+            android:text="Telepon pemilik :"/>
+
+        <TextView
+            android:id="@+id/txt_telepon"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="080"
+            android:textSize="18sp"
+            android:fontFamily="@font/gotham"
+            android:layout_below="@+id/telepon"/>
+
+        <Button
+            android:background="@drawable/shape_two"
+            android:id="@+id/btn_pesan"
+            android:fontFamily="@font/ubuntu"
+            android:textColor="@color/gradStart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_telepon"
+            android:layout_alignEnd="@+id/txt_nama"
+            android:text="PESAN"
+            android:textSize="24sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="142dp" />
+
+    </RelativeLayout>
+</ScrollView>

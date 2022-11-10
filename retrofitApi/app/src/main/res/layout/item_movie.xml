@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="8dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Joker"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:maxLines="5"
+                    android:text="iam joker"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvReleaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="bottom"
+                    android:text="28 januaru 2001"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
