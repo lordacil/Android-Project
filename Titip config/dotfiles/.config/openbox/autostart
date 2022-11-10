@@ -1,0 +1,5 @@
+nitrogen --restore &
+compton &
+xsettingsd &
+sh ~/konpik/dotfiles-masterlll/lemonbar/ez &
+mpd &

@@ -1,0 +1,104 @@
+
+! ------------------------------------------------------------------------------
+! ------------------------------------------------------------------------------
+
+! special
+*.foreground:   #f8f8f2
+*.background:   #2f343f
+*.cursorColor:  #b48ead
+
+! black
+*.color0  : #4b5262
+*.color8  : #434a5a
+
+! red
+*.color1  : #ff5555
+*.color9  : #cc4444
+
+! green
+*.color2  : #A5D7B2
+*.color10 : #41cc64
+
+! yellow
+*.color3  : #f1fa8c
+*.color11 : #c5cc72
+
+! blue
+*.color4  : #bd93f9
+*.color12 : #9b78cc
+
+! magenta
+*.color5  : #ff79c6
+*.color13 : #cc619f
+
+! cyan
+*.color6  : #8be9fd
+*.color14 : #70bccc
+
+! white
+*.color7  : #e5e9f0
+*.color15 : #d1d5dc
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter: lcddefault
+Xft.autohint: true
+
+URxvt.intensityStyles:  false
+!URxvt.font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
+!URxvt.font: -misc-fixed-bold-r-normal--15-140-75-75-c-90-iso8859-1
+URxvt.font:             xft:Fira Code:size=8
+!            xft:Kochi Gothic:antialias=false,\
+!            xft:Baekmuk Gulim
+URxvt.boldFont:         xft:monospace:bold:size=8
+!            xft:Kochi Gothic:antialias=false,\
+!            xft:Baekmuk Gulim
+URxvt.saveLines:        8192
+
+URxvt*scrollTtyOutput:    false
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
+URxvt.scrollBar:          false
+URxvt.internalBorder:     5
+URxvt.cursorBlink:        false
+URxvt.cursorUnderline:    true
+URxvt*skipBuiltinGlyphs:    true
+
+URxvt.perl-ext-common: font-size
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+URxvt.letterSpace: 0
+URxvt.geometry:	55x10
+
+rofi.modi:                           ssh,window,drun,run
+rofi.sidebar-mode:                   true
+rofi.terminal:                       urxvt
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+rofi.opacity:                        100
+rofi.width:                          40
+rofi.lines:                          5
+rofi.columns:                        3
+rofi.font:                           Iosevka 9
+rofi.bw:                             0
+rofi.location:                       0
+rofi.padding:                        30
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    5
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width: 0
+rofi.color-enabled: false
+                                                           

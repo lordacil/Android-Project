@@ -1,0 +1,189 @@
+#!/bin/bash
+
+#  _                                _
+# | |                              | |
+# | |     ___ _ __ ___   ___  _ __ | |__   __ _ _ __
+# | |    / _ \ '_ ` _ \ / _ \| '_ \| '_ \ / _` | '__|
+# | |___|  __/ | | | | | (_) | | | | |_) | (_| | |
+# |______\___|_| |_| |_|\___/|_| |_|_.__/ \__,_|_|
+#
+#  github.com/fikriomar16
+
+pkill lemonbar
+
+color0='#2f343f'
+color8='#444A57'
+color1='#BF616A'
+color9='#BF616A'
+color2='#A3BE8C'
+color10='#A3BE8C'
+color3='#EBCB8B'
+color11='#EBCB8B'
+color4='#81A1C1'
+color12='#81A1C1'
+color5='#B48EAD'
+color13='#B48EAD'
+color6='#88C0D0'
+color14='#88C0D0'
+color7='#e1e1e1'
+color15='#e7e8eb'
+
+trans="#2f343f"
+bg="%{B$color0}%{F$color4}"
+active="%{B$color4}%{F$color0}"
+brdr="%{U$color0}{+o}%{+u}"
+#cbrdr="%{-o}%{-u}"
+
+geo="1366x28+0+0"
+f1="iosevka\Nerd\Font:size=9"
+f2="TakaoPGothic:size=10"
+
+s1="%{B$color0}%{F$color4}%{B-}%{F-}"
+s2="%{B$color1}%{F$color0}%{B-}%{F-}"
+s3="%{B$color0}%{F$color1}%{B-}%{F-}"
+s4="%{B$color3}%{F$color0}%{B-}%{F-}"
+s5="%{B$color0}%{F$color3}%{B-}%{F-}"
+
+s6="%{B$color0}%{F$color6}%{B-}%{F-}"
+s7="%{B$color6}%{F$color0}%{B-}%{F-}"
+s8="%{B$color0}%{F$color5}%{B-}%{F-}"
+s9="%{B$color5}%{F$color0}%{B-}%{F-}"
+s10="%{B$color0}%{F$color0}%{B-}%{F-}"
+s11="%{B$color2}%{F$color0}%{B-}%{F-}"
+s12="%{B$color0}%{F$color4}%{B-}%{F-}"
+s13="%{B$color4}%{F$color0}%{B-}%{F-}"
+s14="%{B$color0}%{F$color3}%{B-}%{F-}"
+s15="%{B$color3}%{F$color0}%{B-}%{F-}"
+
+swsa="%{B$color4}%{F$color0}%{B-}%{F-}"
+swsn="%{B$color0}%{F$color4}%{B-}%{F-}"
+
+wsa="  "
+wsd="  "
+
+menu(){
+    echo "%{B$color4}%{F$color0}%{A:menubar:}  Menu %{A}%{B-}%{F-}$s1"
+}
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=("  " "  " "  " "  ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:upper:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:upper:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_window(){
+	id=$(xtitle -t 50)
+	echo -n "%{B$color0}%{F$color15} $id %{B-}%{F-}"
+}
+icon_window(){
+	echo -n "$s4%{B$color3}%{F$color0}%{A:rofi -show window:}  %{A}%{B-}%{F-}$s5"
+}
+
+get_song() {
+    echo "%{B$color0}%{F$color1}%{A:popup-art:} $(mpc -p 6601 current -f %title%) %{A}%{B-}%{F-}"
+}
+icon_song(){
+    echo "$s2%{B$color1}%{F$color0}%{A:mpc -p 6601 toggle:}%{A3:mpd-popup:}  %{A}%{A}%{B-}%{F-}$s3"
+}
+
+get_network() {
+    network_id=$(/sbin/iwgetid -r)
+    if [ -n "$network_id" ]
+    then
+        echo "%{B$color0}%{F$color15} ${network_id} %{B-}%{F-}"
+    else
+        echo "%{B$color0}%{F$color15} offline %{B-}%{F-}"
+    fi
+}
+icon_network(){
+    network_id=$(/sbin/iwgetid -r)
+    if [ -n "$network_id" ]
+    then
+        echo "$s6%{B$color6}%{F$color0}%{A:nmcli_dmenu:}%{A3:urxvt -g 75x25 -e nmtui:}  %{A}%{A}%{B-}%{F-}$s7"
+    else
+        echo "$s6%{B$color6}%{F$color0}%{A:nmcli_dmenu:}%{A3:urxvt -g 75x25 -e nmtui:}  %{A}%{A}%{B-}%{F-}$s7"
+    fi
+}
+
+get_volume(){
+    statusLine=$(amixer get Master | tail -n 1)
+    echo "%{B$color0}%{F$color15} $(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')% %{B-}%{F-}"
+}
+icon_volume(){
+    echo "$s8%{B$color5}%{F$color0}%{A:amixer -q sset Master 3%+ unmute:}%{A3:amixer -q sset Master 3%- unmute:}  %{A}%{A}%{B-}%{F-}$s9"
+}
+
+get_battery() {
+    battery_status=$(cat /sys/class/power_supply/BAT0/status)
+    battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
+    case "$battery_status" in
+        Charging)
+            echo "%{B$color0}%{F$color15} ${battery_percent}% %{B-}%{F-}"
+            ;;
+        Discharging)
+            if [ "$battery_percent" -gt 80 ]
+            then
+                echo "%{B$color0}%{F$color15} ${battery_percent}% %{B-}%{F-}"
+            elif [ "$battery_percent" -gt 30 ]
+            then
+                echo "%{B$color0}%{F$color15} ${battery_percent}% %{B-}%{F-}"
+            else
+                echo "%{B$color0}%{F$color15} ${battery_percent}% %{B-}%{F-}"
+            fi
+            ;;
+        Unknown|Full) echo "%{B$color0}%{F$color15} Full %{B-}%{F-}";;
+    esac
+}
+icon_battery() {
+    battery_status=$(cat /sys/class/power_supply/BAT0/status)
+    battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
+    case "$battery_status" in
+        Charging)
+            echo "$s10%{B$color2}%{F$color0}  %{B-}%{F-}$s11"
+            ;;
+        Discharging)
+            if [ "$battery_percent" -gt 80 ]
+            then
+                echo "$s10%{B$color2}%{F$color0}  %{B-}%{F-}$s11"
+            elif [ "$battery_percent" -gt 30 ]
+            then
+                echo "$s10%{B$color2}%{F$color0}  %{B-}%{F-}$s11"
+            else
+                echo "$s10%{B$color2}%{F$color0}  %{B-}%{F-}$s11"
+            fi
+            ;;
+        Unknown|Full) echo "$s10%{B$color2}%{F$color0}  %{B-}%{F-}$s11";;
+    esac
+}
+
+get_date() {
+        echo "%{B$color0}%{F$color15} $(date +'%a - %b %d, %Y') %{B-}%{F-}"
+}
+icon_date(){
+    echo "$s12%{B$color4}%{F$color0}  %{B-}%{F-}$s13"
+}
+get_time() {
+        echo "%{B$color0}%{F$color15} $(date +'%H:%M') %{B-}%{F-}"
+}
+icon_time(){
+    echo "$s14%{B$color3}%{F$color0}  %{B-}%{F-}$s15"
+}
+
+while true; do
+    echo "%{B$color4}$brdr%{l}%{O5}$(menu)$(get_ws)$(icon_song)$(get_song)$(icon_window)$(get_window) \
+    %{r} $(icon_network)$(get_network)$(icon_volume)$(get_volume)$(icon_battery)$(get_battery)$(icon_date)$(get_date)$(icon_time)$(get_time)%{O5}"
+    sleep 1
+done | lemonbar -b -g "${geo}" -f "${f1}" -f "${f2}" -B "$color0" -F "$color4" -u 4 -a 25 | sh & > /dev/null

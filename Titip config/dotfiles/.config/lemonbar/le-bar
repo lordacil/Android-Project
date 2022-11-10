@@ -1,0 +1,163 @@
+#!/bin/bash
+
+#  _                                _
+# | |                              | |
+# | |     ___ _ __ ___   ___  _ __ | |__   __ _ _ __
+# | |    / _ \ '_ ` _ \ / _ \| '_ \| '_ \ / _` | '__|
+# | |___|  __/ | | | | | (_) | | | | |_) | (_| | |
+# |______\___|_| |_| |_|\___/|_| |_|_.__/ \__,_|_|
+#
+#  github.com/fikriomar16
+
+pkill lemonbar
+
+color0='#952f343f'
+color8='#444A57'
+color1='#BF616A'
+color9='#BF616A'
+color2='#A3BE8C'
+color10='#A3BE8C'
+color3='#EBCB8B'
+color11='#EBCB8B'
+color4='#81A1C1'
+color12='#81A1C1'
+color5='#B48EAD'
+color13='#B48EAD'
+color6='#88C0D0'
+color14='#88C0D0'
+color7='#e1e1e1'
+color15='#e7e8eb'
+
+bg="%{B$color0}%{F$color6}"
+active="%{B$color6}%{F$color0}"
+#trans="%{B#002f343f}%{F#00e7e8eb}"
+
+geo="1366x28+0+0"
+f1="iosevka\Nerd\Font:size=9"
+f2="TakaoPGothic:size=10"
+
+wsa="  "
+wsd="  "
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=("  " "  " "  " "  ")
+    for i in {0..3}; do
+        echo -n "%{U$color6}%{+o}$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$active"
+        else
+            echo -n ""
+        fi
+        echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:upper:]'
+        echo -n "%{A}$bg"
+done
+}
+
+get_window(){
+	id=$(xtitle -t 70)
+	echo -n "%{U$color3}%{+o}%{B$color0}%{F$color15}$id "
+}
+icon_window(){
+	echo -n "%{U$color3}%{+o}%{B$color0}%{F$color3}  %{-o}"
+}
+
+get_song() {
+    echo -n "%{U$color1}%{+o}%{B$color0}%{F$color15}%{A:popup-bottom:} $(mpc -p 6601 current) %{A}"
+}
+icon_song(){
+    echo -n "%{U$color1}%{+o}%{B$color0}%{F$color1}%{A:mpc -p 6601 toggle:}%{A3:mpd-popup:}  %{A}%{A}%{-o}"
+}
+
+get_network() {
+    network_id=$(/sbin/iwgetid -r)
+    if [ -n "$network_id" ]
+    then
+        echo -n "%{U$color6}%{+o}%{B$color0}%{F$color15}${network_id} "
+    else
+        echo -n "%{U$color6}%{+o}%{B$color0}%{F$color15}offline "
+    fi
+}
+icon_network(){
+    network_id=$(/sbin/iwgetid -r)
+    if [ -n "$network_id" ]
+    then
+        echo -n "%{U$color6}%{+o}%{B$color0}%{F$color6}%{A:nmcli_dmenu:}  %{A}%{-o}"
+    else
+        echo -n "%{U$color6}%{+o}%{B$color0}%{F$color6}  %{-o}"
+    fi
+}
+
+get_volume(){
+    statusLine=$(amixer get Master | tail -n 1)
+    echo -n "%{U$color5}%{+o}%{B$color0}%{F$color15}$(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')% "
+}
+icon_volume(){
+    echo -n "%{U$color5}%{+o}%{B$color0}%{F$color5}%{A:amixer -q sset Master 3%+ unmute:}%{A3:amixer -q sset Master 3%- unmute:}  %{A}%{A}%{-o}"
+}
+
+get_battery() {
+    battery_status=$(cat /sys/class/power_supply/BAT0/status)
+    battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
+    case "$battery_status" in
+        Charging)
+            echo -n "%{U$color2}%{+o}%{B$color0}%{F$color15} ${battery_percent}% "
+            ;;
+        Discharging)
+            if [ "$battery_percent" -gt 80 ]
+            then
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color15} ${battery_percent}% "
+            elif [ "$battery_percent" -gt 30 ]
+            then
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color15} ${battery_percent}% "
+            else
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color15} ${battery_percent}% "
+            fi
+            ;;
+        Unknown|Full) echo -n "%{U$color2}%{+o}%{B$color0}%{F$color15} 100% ";;
+    esac
+}
+icon_battery() {
+    battery_status=$(cat /sys/class/power_supply/BAT0/status)
+    battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
+    case "$battery_status" in
+        Charging)
+            echo -n "%{U$color2}%{+o}%{B$color0}%{F$color2} %{-o}"
+            ;;
+        Discharging)
+            if [ "$battery_percent" -gt 80 ]
+            then
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color2} %{-o}"
+            elif [ "$battery_percent" -gt 30 ]
+            then
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color2} %{-o}"
+            else
+                echo -n "%{U$color2}%{+o}%{B$color0}%{F$color2} %{-o}"
+            fi
+            ;;
+        Unknown|Full) echo -n "%{U$color2}%{+o}%{B$color0}%{F$color2} %{-o}";;
+    esac
+}
+
+get_date() {
+        echo -n "%{U$color4}%{+o}%{B$color0}%{F$color15} $(date +'%a - %b %d, %Y') "
+}
+icon_date(){
+    echo -n "%{U$color4}%{+o}%{B$color0}%{F$color4} %{-o}"
+}
+get_time() {
+        echo -n "%{U$color3}%{+o}%{B$color0}%{F$color15} $(date +'%H:%M') %{O10}"
+}
+icon_time(){
+    echo -n "%{U$color3}%{+o}%{B$color0}%{F$color3} %{-o}"
+}
+
+get_weather(){
+	echo -n "%{U$color4}%{+o}%{B$color0}%{F$color4} $(~/.config/tint2/scripts/weather -i) "
+}
+
+while true; do
+    echo "%{U$color6}%{+o} %{l} $(get_ws) $(icon_song)$(get_song) $(icon_window)$(get_window) \
+    %{r} $(icon_network)$(get_network) $(icon_volume)$(get_volume) $(icon_battery)$(get_battery) $(icon_date)$(get_date) $(icon_time)$(get_time)"
+    sleep 1
+done | lemonbar -b -g "${geo}" -f "${f1}" -f "${f2}" -u 3 | sh & > /dev/null

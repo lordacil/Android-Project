@@ -1,0 +1,120 @@
+#!/bin/bash
+
+# _                                _
+#| |                              | |
+#| |     ___ _ __ ___   ___  _ __ | |__   __ _ _ __
+#| |    / _ \ '_ ` _ \ / _ \| '_ \| '_ \ / _` | '__|
+#| |___|  __/ | | | | | (_) | | | | |_) | (_| | |
+#|______\___|_| |_| |_|\___/|_| |_|_.__/ \__,_|_|
+
+pkill lemonbar
+
+color0='#2f343f'
+color8='#444A57'
+color1='#BF616A'
+color9='#BF616A'
+color2='#A3BE8C'
+color10='#A3BE8C'
+color3='#EBCB8B'
+color11='#EBCB8B'
+color4='#81A1C1'
+color12='#81A1C1'
+color5='#B48EAD'
+color13='#B48EAD'
+color6='#88C0D0'
+color14='#88C0D0'
+color7='#e1e1e1'
+color15='#e7e8eb'
+
+# format an icon
+icon() {
+    printf "%s\\n" "%{F${color4}}${1}%{F-}"
+}
+
+get_workspaces() {
+	desk=$(xdotool get_desktop)
+    current_workspace=$(($desk + 1))
+    case "$current_workspace" in
+        1) printf "%s\\n" " $(icon )      ";;
+        2) printf "%s\\n" "  $(icon )     ";;
+        3) printf "%s\\n" "   $(icon )    ";;
+        4) printf "%s\\n" "    $(icon )   ";;
+        5) printf "%s\\n" "     $(icon )  ";;
+        6) printf "%s\\n" "      $(icon ) ";;
+    esac
+}
+
+get_song() {
+        printf "%.75s\\n" "$(icon ) $(mpc -p 6601 current)"
+}
+
+get_date() {
+    printf "%s\\n" " $(icon ) $(date +'%a, %b %d') "
+}
+
+get_time() {
+    printf "%s\\n" " $(icon ) $(date +'%H:%M') "
+}
+
+get_network() {
+    network_id=$(/sbin/iwgetid -r)
+    if [ -n "$network_id" ]
+    then
+        printf "%s\\n" " $(icon ) ${network_id} "
+    else
+        printf "%s\\n" " $(icon ) offline "
+    fi
+}
+
+get_battery() {
+    battery_status=$(cat /sys/class/power_supply/BAT0/status)
+    battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
+    case "$battery_status" in
+        Charging)
+            printf "%s%%\\n" " $(icon ) ${battery_percent}"
+            ;;
+        Discharging)
+            if [ "$battery_percent" -gt 80 ]
+            then
+                printf "%s%%\\n" " $(icon ) ${battery_percent}"
+            elif [ "$battery_percent" -gt 30 ]
+            then
+                printf "%s%%\\n" " $(icon ) ${battery_percent}"
+            else
+                printf "%s%%\\n" " $(icon ) ${battery_percent}"
+            fi
+            ;;
+        Unknown|Full) printf "%s%%\\n" " $(icon ) 100";;
+    esac
+}
+
+get_window(){
+	printf "%s\\n" " $(icon ) $(xtitle) "
+}
+
+get_volume(){
+	statusLine=$(amixer get Master | tail -n 1)
+	#volume=$(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')
+	printf "%s\\n" " $(icon ) $(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')% "
+}
+
+# main
+main() {
+    # loop
+    while :
+    do
+       printf "%s%s%s\\n" \
+            "%{l}  $(get_workspaces)  " \
+            "%{c}$(get_song)" \
+            "%{r}$(get_network) $(get_volume) $(get_battery)  $(get_date)$(get_time)  "
+        sleep 1s
+    done |\
+    # lemonbar settings
+    lemonbar -g 'x28'  \
+        -f 'iosevka Nerd Font:size=10' -f 'TakaoPGothic:size=12' \
+        -B "${color0}" -F "${color7}" \
+        -n 'bar' \
+        LVDS-1
+}
+
+main
